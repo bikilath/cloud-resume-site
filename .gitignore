@@ -1,0 +1,37 @@
+# Python specific
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python/
+env/
+venv/
+lib/
+log/
+htmlcov/
+.pytest_cache/
+.mypy_cache/
+.vscode/
+
+# Azure Functions specific
+# local.settings.json contains sensitive information (like connection strings)
+# Do NOT commit this file to your public or even private repository.
+api/local.settings.json
+*.funcignore
+
+# Node.js artifacts (if you happen to use npm for anything)
+node_modules/
+
+# OS generated files
+.DS_Store
+.Trash
+Thumbs.db
+
+# Build artifacts for Static Web Apps
+# SWA builds might create temporary folders, generally safe to ignore
+.swa/
+.azure/
+
+# Any specific build output folders that might get created
+dist/
+build/
