@@ -1,2 +1,4 @@
 azure-functions
+azure-core
 azure-data-tables
+requests
