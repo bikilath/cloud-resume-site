@@ -1,27 +1,95 @@
-body {
-  font-family: Arial, sans-serif;
-  max-width: 700px;
-  margin: 2rem auto;
-  padding: 1rem;
-  line-height: 1.6;
-  background: #f4f4f4;
-  color: #333;
+/* Reset some default browser styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
+/* Base body styling */
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  line-height: 1.6;
+  background-color: #f4f6f8;
+  color: #333;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* Header and footer */
 header, footer {
   text-align: center;
   margin-bottom: 2rem;
 }
 
 h1 {
-  margin-bottom: 0;
+  font-size: 2.2rem;
+  color: #1e88e5;
+  margin-bottom: 0.25rem;
 }
 
+p {
+  font-size: 1.1rem;
+}
+
+/* Profile photo */
+.profile-photo {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border: 3px solid #1e88e5;
+}
+
+/* Headings */
+h2 {
+  margin-top: 1.5rem;
+  font-size: 1.5rem;
+  color: #222;
+  border-bottom: 2px solid #1e88e5;
+  padding-bottom: 0.3rem;
+  margin-bottom: 1rem;
+}
+
+/* Links */
 a {
-  color: #0066cc;
+  color: #1e88e5;
   text-decoration: none;
+  transition: 0.2s ease;
 }
 
 a:hover {
   text-decoration: underline;
+}
+
+/* Section styling */
+section {
+  margin-bottom: 2rem;
+}
+
+/* Footer text */
+footer p {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  body {
+    margin: 1rem;
+    padding: 1rem;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  .profile-photo {
+    width: 120px;
+    height: 120px;
+  }
 }
