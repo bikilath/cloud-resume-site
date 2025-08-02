@@ -1,95 +1,109 @@
-/* Reset some default browser styles */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 
-/* Base body styling */
 body {
-  font-family: 'Segoe UI', Arial, sans-serif;
-  max-width: 800px;
-  margin: 2rem auto;
-  padding: 1.5rem;
-  line-height: 1.6;
-  background-color: #f4f6f8;
-  color: #333;
-  border-radius: 10px;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f6f8;
+    color: #333;
 }
 
-/* Header and footer */
-header, footer {
-  text-align: center;
-  margin-bottom: 2rem;
+header {
+    background-color: #0078D7;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.profile-photo {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 4px solid white;
+    margin-bottom: 10px;
 }
 
 h1 {
-  font-size: 2.2rem;
-  color: #1e88e5;
-  margin-bottom: 0.25rem;
+    margin: 10px 0 5px;
+    font-size: 2em;
 }
 
-p {
-  font-size: 1.1rem;
+.contact-info p, .contact-info a {
+    color: white;
+    margin: 5px 0;
+    font-size: 0.95em;
 }
 
-/* Profile photo */
-.profile-photo {
-  width: 150px;
-  height: 150px;
-  object-fit: cover;
-  border-radius: 50%;
-  margin-bottom: 1rem;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  border: 3px solid #1e88e5;
+main {
+    padding: 20px;
+    max-width: 1000px;
+    margin: auto;
 }
 
-/* Headings */
+section {
+    background-color: white;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
 h2 {
-  margin-top: 1.5rem;
-  font-size: 1.5rem;
-  color: #222;
-  border-bottom: 2px solid #1e88e5;
-  padding-bottom: 0.3rem;
-  margin-bottom: 1rem;
+    color: #0078D7;
+    border-bottom: 2px solid #0078D7;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
 }
 
-/* Links */
+.skills-category {
+    margin-bottom: 15px;
+}
+
+.skills-category h3 {
+    color: #444;
+    margin-bottom: 5px;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+ul li {
+    margin-bottom: 5px;
+}
+
+article {
+    margin-bottom: 15px;
+}
+
+.company {
+    font-weight: bold;
+    color: #555;
+}
+
+.dates {
+    font-style: italic;
+    color: #777;
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: #0078D7;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 0.9em;
+}
+
 a {
-  color: #1e88e5;
-  text-decoration: none;
-  transition: 0.2s ease;
+    color: #0078D7;
+    text-decoration: none;
 }
 
 a:hover {
-  text-decoration: underline;
+    text-decoration: underline;
 }
 
-/* Section styling */
-section {
-  margin-bottom: 2rem;
-}
-
-/* Footer text */
-footer p {
-  font-size: 0.9rem;
-  color: #666;
-}
-
-/* Responsive adjustments */
-@media (max-width: 600px) {
-  body {
-    margin: 1rem;
-    padding: 1rem;
-  }
-
-  h1 {
-    font-size: 1.8rem;
-  }
-
-  .profile-photo {
-    width: 120px;
-    height: 120px;
-  }
+#counter {
+    font-weight: bold;
+    color: #0078D7;
 }
